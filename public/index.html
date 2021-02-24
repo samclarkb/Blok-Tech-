@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="">
+  <img src="images/matchmaker.svg" alt="">
+</div>
+
+<div class="">
+  <form class="" action="index.html" method="post" id="match">
+
+    <h2>Waar ben je naar opzoek?</h2>
+
+    <label for="geslacht">GESLACHT:</label>
+    <label>
+      <input type="radio" name="test" value="vrouw" id="geslacht">
+      <img src="images/female.png">
+    </label>
+    <label>
+      <input type="radio" name="test" value="man" id="geslacht">
+      <img src="images/male.png">
+    </label>
+
+    <label for="leeftijd">LEEFTIJD:</label>
+    <input type="range" min="18" max="65" value="42" id="leeftijd">
+
+    <label for="hobby">LENGTE:</label>
+    <select id="hobby" name="">
+      <option selected>Lang</option>
+      <option value="">Gemiddeld</option>
+      <option value="">Klein</option>
+    </select>
+
+    <label for="leeftijd">AFSTAND (KM):</label>
+    <input type="range" min="5" max="100" value="42" id="leeftijd">
+    <label for="">PERSOONLIJKHEID:</label>
+      <div class="check">
+        <input type="checkbox" id="sportief" name="sportief" value="sportief">
+        <label for="vehicle1">Sportief</label>
+        <input type="checkbox" id="vriendelijk" name="vriendelijk" value="vriendelijk">
+        <label for="vehicle2">Vriendelijk</label>
+        <input type="checkbox" id="humoristisch" name="humoristisch" value="humoristisch">
+        <label for="vehicle3">Grappig</label>
+        <input type="checkbox" id="sportief" name="sportief" value="sportief">
+        <label for="vehicle1">Sociaal</label>
+        <input type="checkbox" id="vriendelijk" name="vriendelijk" value="vriendelijk">
+        <label for="vehicle2">ijdel</label>
+        <input type="checkbox" id="humoristisch" name="humoristisch" value="humoristisch">
+        <label for="vehicle3">Stoer</label>
+
+      </div>
+
+
+    <button type="submit" form="match" name="button">VERZEND</button>
+
+  </form>
+
+</div>
+
+
+
+</body>
+</html>

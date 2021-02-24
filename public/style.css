@@ -1,0 +1,123 @@
+body {
+background-color: #fdebec;
+font-family: sans-serif;
+font-weight: bold;
+overflow-x: hidden;
+}
+
+img {
+  width: 65vw;
+  margin-top: 5vw;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #dba9ae;
+  width: 80vw;
+  text-align: center;
+  border-radius: 5vw;
+  font-size: 3vw;
+  color: #9b5063;
+}
+
+input {
+  background-color: #fdebec;
+  border: solid 1px #fdebec;
+  border-radius: 0.5vw;
+}
+
+label:nth-of-type(1), label:nth-of-type(4), label:nth-of-type(5), label:nth-of-type(6), button, label:nth-of-type(7) {
+  display: block;
+}
+
+label {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+label img {
+  width: 8vw;
+  margin: 1vw 1vw;
+}
+
+label [type=radio] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+label [type=radio] + img {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+label [type=radio] + img:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transition: 0.5s;
+}
+
+label [type=radio]:checked + img {
+  opacity: 100%
+}
+
+input [type=rage]  {
+  background: #fdebec;
+}
+
+h2 {
+  background-color: #9b5063;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  border-top-left-radius: 5vw;
+  border-top-right-radius: 5vw;
+  padding: 2vw;
+  margin-bottom: 5vw;
+}
+
+select {
+  color: #9b5063;
+  background-color: #fdebec;
+  padding: 1vw 3vw;
+  font-size: 1.5vw;
+  border: solid 1px #fdebec;
+  border-radius: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  color: #9b5063;
+  font-weight: bold;
+  border: solid 1px #fdebec;
+  background-color: #fdebec;
+  padding: 1vw 3vw;
+  border-radius: 3vw;
+  margin-bottom: 5vw;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.check {
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.check label {
+  /* padding: 2vw; */
+}
+
+div>h1{
+  color: #dba9ae;
+}
+
+
+/* ￼Https://nl.vecteezy.com/vector-kunst/240290-verloofd-paar-verliefd-illustratie */
+
+/* https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons/17541916 */
