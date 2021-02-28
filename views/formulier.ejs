@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<h1><%- include ('partials/logo'); %></h1>
+
+<div class="">
+  <form class="" action="/resultaten" method="post" >
+
+    <h2>Waar ben je naar opzoek?</h2>
+
+    <label for="geslacht">GESLACHT:</label>
+    <label>
+      <input type="radio" name="geslacht" value="vrouw" id="geslacht">
+      <img src="images/female.png">
+    </label>
+    <label>
+      <input type="radio" name="geslacht" value="man" id="geslacht">
+      <img src="images/male.png">
+    </label>
+
+    <label for="leeftijd">LEEFTIJD:</label>
+    <input type="range" min="18" max="65" value="42" id="leeftijd" name="leeftijd">
+
+    <label for="hobby">LENGTE:</label>
+    <select id="hobby" name="lengte">
+      <option selected value="lang">Lang</option>
+      <option value="Gemiddeld">Gemiddeld</option>
+      <option value="Klein">Klein</option>
+    </select>
+
+    <label for="afstand">AFSTAND (KM):</label>
+    <input type="range" min="5" max="100" value="42" id="leeftijd" name="afstand">
+
+    <label for="persoonlijkheid">PERSOONLIJKHEID:</label>
+      <div class="check">
+        <input type="checkbox" id="sportief" name="Interesse" value="sportief">
+        <label for="persoonlijkheid">Sportief</label>
+        <input type="checkbox" id="vriendelijk" name="Interesse" value="vriendelijk">
+        <label for="persoonlijkheid">Vriendelijk</label>
+        <input type="checkbox" id="humoristisch" name="Interesse" value="humoristisch">
+        <label for="persoonlijkheid">Grappig</label>
+        <input type="checkbox" id="sportief" name="Interesse" value="sportief">
+        <label for="persoonlijkheid">Sociaal</label>
+        <input type="checkbox" id="vriendelijk" name="Interesse" value="vriendelijk">
+        <label for="persoonlijkheid">ijdel</label>
+        <input type="checkbox" id="humoristisch" name="Interesse" value="humoristisch">
+        <label for="persoonlijkheid">Stoer</label>
+
+      </div>
+
+
+    <button type="submit">VERZEND</button>
+
+  </form>
+
+</div>
+
+
+
+</body>
+</html>
